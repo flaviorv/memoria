@@ -50,7 +50,8 @@
     }
 
     function trocarTema(t) {
-        tema = "img/" + t.toLowerCase().replace(" ", "") + "/"
+        tema = "./img/" + t.toLowerCase().replace(" ", "") + "/"
+        console.log(tema)
         selecionarImagemFundo()
         return tema
     }
@@ -65,15 +66,14 @@
         temaArmazenado = false
         try {
             temaLs = localStorage.getItem("tema")
-            console.log(temaLs)
             for (let i = 0; i < temas.length; i++) {
-                if (temaLs == "img/"+temas[i].toLowerCase().replace(" ", "")+"/") {
+                if (temaLs == "./img/" + temas[i].toLowerCase().replace(" ", "") + "/") {
                     trocarTema(temas[i])
                     temaArmazenado = true
                     console.log("O tema armazenado foi carregado com sucesso")
                 }
             }
-            if(!temaArmazenado){
+            if (!temaArmazenado) {
                 trocarTema(temas[0])
             }
         } catch (error) {

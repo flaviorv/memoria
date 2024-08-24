@@ -22,6 +22,7 @@ header{
 button{
     border-radius: 10px;
     background-color: lightblue;
+    cursor: pointer;
 }
 
 button:hover{
@@ -46,6 +47,7 @@ button:hover{
     margin: 10px;
     height: 150px;
     width: 120px;
+    cursor: pointer;
 }
 
 html, body {

@@ -3,9 +3,10 @@
   <img src="./img/readme1.png"/>
 </p>
 
-- 1 - Clone este repositório
-- 2 - Encontre o arquivo index.html
-- 3 - Copie seu caminho e cole no navegador
+- 1 - É necessário ter o node instalado na máquina
+- 2 - Entre com "npm install" no terminal
+- 3 - Após, entre com "npm start"
+- 4 - Acesse "localhost:3000" no navegador
 
 <p align="center">
   <img src="./img/readme2.png"/>
